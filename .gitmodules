@@ -1,0 +1,3 @@
+[submodule "ext/buildroot"]
+	path = ext/buildroot
+	url = git://git.buildroot.net/buildroot
