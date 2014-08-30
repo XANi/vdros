@@ -1,0 +1,8 @@
+[Unit]
+Description=Pire psot-run stuff
+
+[Service]
+ExecStart=/etc/post-run.sh
+
+[Install]
+WantedBy=multi-user.target
