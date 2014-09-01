@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Vdros by XANi</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Vdros</h1>
+        <h2>Virtualisation Debug/Rescue OS</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/XANi/vdros/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/XANi/vdros/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/XANi/vdros" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a name="virtualisation-debugrecovery-os" class="anchor" href="#virtualisation-debugrecovery-os"><span class="octicon octicon-link"></span></a>Virtualisation Debug/Recovery OS</h1>
+
+<p>This is a simple Linux image with a bunch of useful tools for debugging and fixing VM environments, including network (nmap and friends), performance (a bunch of benchmarking tools) and rescue (few tools to mount and repair existing filesystem).</p>
+
+<p>It was inspired by cirros <a href="https://launchpad.net/cirros">Cirros</a>, but expanded to provide for functionality sysadmin needs, and remove unnecesary waste of time (like typing exactly same default passowrd when logging on console.</p>
+
+<h2>
+<a name="building-debianubuntu" class="anchor" href="#building-debianubuntu"><span class="octicon octicon-link"></span></a>Building (Debian/Ubuntu)</h2>
+
+<pre><code>$ sudo apt-get install gcc-multilib build-essential libncurses5-dev git bzip2
+$ ./build.sh
+</code></pre>
+
+<p>if all goes correct, images should show up in images ( ext/buildroot/output/images)</p>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>By default it spawns passwordless root shell on every console + ttyS0. Kernel output goes on ttyS0 <em>and</em> tty1 so if you use Openstack you should see it in <em>Log</em> tab.</p>
+
+<p>Networking is defined to spawn DHCP on every ethernet interface (<code>en*</code>)</p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
