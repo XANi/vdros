@@ -1,1 +1,3 @@
 Welcome to VDROS!
+Shortcuts:
+* mk-os-chroot - mount /proc /sys /dev into specified chroot via bind
