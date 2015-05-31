@@ -10,7 +10,7 @@ Tharte is to create relatively small bootable image for testing(benchmarks)/debu
 
 * Debian/Ubuntu
 
-    apt-get install gcc-multilib build-essential libncurses5-dev git bzip2
+    apt-get install gcc-multilib build-essential libncurses5-dev git bzip2 unzip bc
 
 
 # Internals #
