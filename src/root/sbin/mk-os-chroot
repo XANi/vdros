@@ -1,0 +1,15 @@
+#!/bin/sh
+DEST=$1
+
+if [ "z$DEST" = "z" ] ; then
+    echo "Mount proc/sys/dev in chroot"
+    echo "Usage: $0 /mnt/os/dir"
+    exit 1
+fi
+
+for dir in dev sys proc ; do
+    echo "Mounting /$dir in $DEST/$dir"
+    mount -o bind /$dir $DEST/$dir
+done
+
+echo "Done: chroot $DEST /bin/bash"
